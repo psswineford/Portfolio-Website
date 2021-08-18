@@ -1,0 +1,258 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 2 version
+*/
+
+:root{
+    --body-background-color: #f9f9eb;
+    --a-primary-color: #357b70;
+    --a-visited-color: #528bb9;
+    --a-active-color: #489c79;
+    --button-primary-color: #10455c;
+    --button--primary-text-color: white;
+    --button-secondary-color: #e0b354;
+    --button-secondary-text-color: #2b2b2b;
+    --grid-item-background-color: lightgrey;
+  }
+  
+  
+  * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  body {
+      background-color: var(--body-background-color);
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+  }
+  
+  h1 {
+      font-size: 30px;
+      font-weight: 700;
+    }
+    
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  table {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  
+  
+  a:visited {
+    /* visited link */
+    color: var(--a-visited-color);
+  
+  }
+  
+  a {
+    color: var(--a-primary-color);
+  }
+  
+  
+  
+  a:hover, a:focus {
+    /* No underlining when hovering over a link */
+    text-decoration: none;
+  }
+  
+  a:active {
+    /* selected link */
+    color: var(--a-active-color);
+  }
+  
+  button,
+  .button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    display: inline-block;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the button */
+    background-color: var(--button-primary-color); 
+    text-decoration: none;
+    color: var(--button--primary-text-color);
+    padding: 10px;
+    border-radius: 3px;
+    /* width of the border, type, color */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    -webkit-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+  }
+  
+  button:hover,
+  button:focus,
+  .button:hover,
+  .button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8; 
+  }
+  
+  .button__secondary {
+    background-color: var(--button-secondary-color);
+    color: var(--button-secondary-text-color);
+  }
+  
+  .page-content {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  
+  
+  .navigation-list__item--active {
+    text-decoration: none;
+  }
+  
+  
+  .profile__portrait {
+    float: left;
+    width: 250px;
+    margin-right: 40px;
+    border-radius: 50%;
+  }
+  
+  .profile{
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .page-footer {
+    clear: both;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  
+  .page-header {
+  
+    display: -webkit-box;
+  
+    display: -ms-flexbox;
+  
+    display: flex;
+    width: 100%;
+    padding: 20px;
+   
+  }
+  
+  .page-header__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 200px;
+            flex: 0 1 200px;
+  }
+  
+  .page-header__item:last-child {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: right;
+  }
+  
+  .navigation-list {
+    list-style-type: none;
+  }
+  
+  .navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+  
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  
+  }
+  
+  .grid__item {
+    background-color: var(--grid-item-background-color);
+  }
+  
+  /* all the @media is for auto reformating to screen sizes */
+  @media all and (max-width: 500px) {
+    .grid {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+    }
+  }
+  @media all and (min-width: 500px) and (max-width: 750px){
+    .grid {
+      -ms-grid-columns: 1fr 20px 1fr;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media all and (max-width: 750px) {
+    .grid {
+      grid-gap: 10px;
+    }
+    .grid__item:last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
+    h1 {
+      font-size: 22px;
+    }
+  }
+  
+  
+  
+  @-webkit-keyframes color-change {
+      0% {
+        fill: gold;
+      }
+      50% {
+        fill: #fcffad;
+      }
+      
+      100% {
+        fill: blue;
+      }
+  }
+  
+  
+  
+  @keyframes color-change {
+      0% {
+        fill: gold;
+      }
+      50% {
+        fill: #fcffad;
+      }
+      
+      100% {
+        fill: blue;
+      }
+  }
+  
+  svg {
+    width: 500px;
+    }
+  
+  path, polyline {
+      -webkit-animation: 4s color-change infinite alternate linear;
+              animation: 4s color-change infinite alternate linear;
+  }
