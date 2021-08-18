@@ -71,6 +71,11 @@
     /* selected link */
     color: var(--a-active-color);
   }
+
+  .social-media {
+    /* remove lines underneath the social media icons */
+    text-decoration: none;
+  }
   
   button,
   .button {
