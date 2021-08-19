@@ -109,7 +109,10 @@ button:focus,
   padding: 20px;
 }
 
-
+#contact-form{
+  text-align: right;
+  display: inline-block;
+}
 
 .navigation-list__item--active {
   text-decoration: none;
