@@ -188,10 +188,16 @@ button:focus,
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
+  padding: 10px;
 }
 
 .grid__item {
   background-color: var(--grid-item-background-color);
+  padding: 10px;
+}
+
+.grid__title {
+  padding: 10px;
 }
 
 /* all the @media is for auto reformating to screen sizes */
