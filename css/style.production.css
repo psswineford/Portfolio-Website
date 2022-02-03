@@ -196,7 +196,24 @@ button:focus,
   padding: 10px;
 }
 
+.grid__item-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 15rem;
+}
+
 .grid__title {
+  padding: 10px;
+}
+
+.grid__footer-left {
+  float: left;
+  padding: 10px;
+}
+
+.grid__footer-right {
+  float: right;
   padding: 10px;
 }
 
