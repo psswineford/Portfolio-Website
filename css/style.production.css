@@ -14,7 +14,7 @@
   --button--primary-text-color: white;
   --button-secondary-color: #e0b354;
   --button-secondary-text-color: #2b2b2b;
-  --grid-item-background-color: lightgrey;
+  --grid-item-background-color: rgb(219, 203, 203);
 }
 
 * {
@@ -46,6 +46,10 @@ h3 {
 table {
   margin-right: auto;
   margin-left: auto;
+}
+
+.index-text {
+  font-size: 18px;
 }
 
 a:visited {
@@ -95,6 +99,11 @@ button,
   transition-duration: 0.2s;
   -webkit-transition-property: opacity;
   transition-property: opacity;
+}
+
+.resume__button {
+  margin: 0 auto;
+  display: block;
 }
 
 button:hover,
@@ -170,7 +179,7 @@ button:focus,
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  text-align: right;
+  text-align: center;
 }
 
 .navigation-list {
@@ -191,6 +200,16 @@ button:focus,
   padding: 10px;
 }
 
+.about-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  padding: 10px;
+}
+
+
 .grid__item {
   background-color: var(--grid-item-background-color);
   padding: 10px;
@@ -204,7 +223,11 @@ button:focus,
 }
 
 .grid__title {
+  text-align: center;
   padding: 10px;
+}
+.grid__item__title {
+  text-align: center;
 }
 
 .grid__footer-left {
@@ -216,6 +239,8 @@ button:focus,
   float: right;
   padding: 10px;
 }
+
+
 
 /* all the @media is for auto reformating to screen sizes */
 @media all and (max-width: 500px) {

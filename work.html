@@ -14,22 +14,27 @@
 
 <body>
   <header class="page-header">
-    <a href="index.html">
-      <img src="./img/logo_200x70.png" alt="logo" class="page-header__item">
-    </a>
     <nav class="main-navigation page-header__item">
       <ul role="menubar" class="navigation-list">
         <li role="presentation">
-          <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+          <a href="index.html" role="menuitem" class="navigation-list__item">
+            <button type="button">Home</button>
+          </a>
         </li>
         <li role="presentation">
-          <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
+          <a href="about.html" role="menuitem" class="navigation-list__item navigation-list__item--active">
+            <button type="button">About Me</button>
+          </a>
         </li>
         <li role="presentation">
-          <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
+          <a href="work.html" role="menuitem" class="navigation-list__item">
+            <button type="button">My Work</button>
+          </a>
         </li>
         <li role="presentation">
-          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+          <a href="contact.html" role="menuitem" class="navigation-list__item">
+            <button type="button">Contact Me</button>
+          </a>
         </li>
       </ul>
     </nav>
@@ -37,92 +42,122 @@
   </header>
   <!-- Main content -->
   <section>
-    <h1 class="grid__title">Work</h1>
+    <h1 class="grid__title">My Portfolio</h1>
     <div class="grid">
       <!-- Grid items will live here -->
       <!-- Grid Item 1-->
       <div class="grid__item">
-        <h2>Project 1 - Pokedex JS App</h2>
+        <h2 class="grid__item__title">Pokedex JS App</h2>
         <img src="./img/projects/pokedex.JPG" alt="logo" class="grid__item-image">
         <p>
-          This app fetches data from the Pokemon API to generate a list of Pokemon buttons. When a button is clicked it will open a card displaying information about the Pokemon.
+          This app fetches data from the Pokemon API to generate a list of Pokemon buttons. When a button is clicked it
+          will open a card displaying information about the Pokemon.
         </p>
         <p>This app utilizes HTML, CSS, Javascript, Bootstrap</p>
         <p>
-        <a href="https://psswineford.github.io/Pokedex-js-app/" target="_blank" class="grid__footer-left">See project in action</a>
-        
-        <a href="https://github.com/psswineford/Pokedex-js-app" target="_blank" class="grid__footer-right">See the Project on GitHub</a>
-      </p>
-     </div>
-     <!-- Grid Item 2-->
-     <div class="grid__item">
-      <h2>Project 2 - Movie API</h2>
-      <img src="./img/projects/api.jpg" alt="logo" class="grid__item-image">
-      <p>
-        This is the server side code for my two MyFlix Client apps. This contains API endpoints that will interface with the back end database of Users, Movies, Genres, and Directors
-      </p>
-      <p>This app utilizes Javascript, Node.js, Express, MongoDB</p>
-      <p>
-      
-      <a href="https://github.com/psswineford/Movie-API" target="_blank" class="grid__footer-right">See the Project on GitHub</a>
-    </p>
-   </div>
-   <!-- Grid Item 3-->
-   <div class="grid__item">
-    <h2>Project 3 - myFlix React Client</h2>
-    <img src="./img/projects/myflix-react.JPG" alt="logo" class="grid__item-image">
-    <p>
-      This is the React version of the client App that interfaces with the Movie API to display and edit the information on the back end database
-    </p>
-    <p>This app utilizes Javascript, React, Bootstrap</p>
-    <p>
-    <a href="https://psswinefords-myflixclient.netlify.app/" target="_blank" class="grid__footer-left">See project in action</a>
-    
-    <a href="https://github.com/psswineford/myFlix-client" target="_blank" class="grid__footer-right">See the Project on GitHub</a>
-  </p>
- </div>
- <!-- Grid Item 4-->
- <div class="grid__item">
-  <h2>Project 4 - Meet App</h2>
-  <img src="./img/projects/meetapp.JPG" alt="logo" class="grid__item-image">
-  <p>
-    This is a serverless web app that fetches and displays data on web developer events world wide utilizing the Google API Calendar, serverless, and AWS. The front end client was built with React. 
-  </p>
-  <p>This app utilizes Javascript, React, Serverless, AWS, OAuth, Recharts</p>
-  <p>
-  <a href="https://psswineford.github.io/meet-app/" target="_blank" class="grid__footer-left">See project in action</a>
-  
-  <a href="https://github.com/psswineford/meet-app" target="_blank" class="grid__footer-right">See the Project on GitHub</a>
-</p>
-</div>
-<!-- Grid Item 5-->
-<div class="grid__item">
-  <h2>Project 5 - Chat App</h2>
-  <img src="./img/projects/Screen Shot 2022-02-03 at 11.01.16 AM.png" alt="logo" class="grid__item-image">
-  <p>
-    This is a react native communications app that allows users to chat in real time. They can also send pictures from their mobile devices, real time photographs, and location data.  The back end uses Google Firestore database. Messages are stored and displayed when the users are offline.
-  </p>
-  <p>This app utilizes React Native, Expo, Firestore/Firebase, Gifted Chat</p>
-  <p>
-  <a href="https://psswineford.github.io/Pokedex-js-app/" target="_blank" class="grid__footer-left">See project in action</a>
-  
-  <a href="https://github.com/psswineford/chat-app" target="_blank" class="grid__footer-right">See the Project on GitHub</a>
-</p>
-</div>
-<!-- Grid Item 6-->
-<div class="grid__item">
-  <h2>Project 6 - myFlix Angular Client</h2>
-  <img src="./img/projects/angular app.JPG" alt="logo" class="grid__item-image">
-  <p>
-    This is the Angular version of the client App that interfaces with the Movie API to display and edit the information on the back end database
-  </p>
-  <p>This app utilizes HTML, Typescript, Angular, Angular Materials</p>
-  <p>
-  <a href="https://psswineford.github.io/myFlix-Angular-client/welcome" target="_blank" class="grid__footer-left">See project in action</a>
-  
-  <a href="https://github.com/psswineford/myFlix-Angular-client" target="_blank" class="grid__footer-right">See the Project on GitHub</a>
-</p>
-</div>
+          <a href="https://psswineford.github.io/Pokedex-js-app/" target="_blank" class="grid__footer-left">
+            <button  type="button">Website</button>
+          </a>
+
+          <a href="https://github.com/psswineford/Pokedex-js-app" target="_blank" class="grid__footer-right">
+            <button  type="button">Github</button>
+          </a>
+        </p>
+      </div>
+      <!-- Grid Item 2-->
+      <div class="grid__item">
+        <h2 class="grid__item__title">Movie API</h2>
+        <img src="./img/projects/api.jpg" alt="logo" class="grid__item-image">
+        <p>
+          This is the server side code for my two MyFlix Client apps. This contains API endpoints that will interface
+          with the back end database of Users, Movies, Genres, and Directors.
+        </p>
+        <p>This app utilizes Javascript, Node.js, Express, MongoDB</p>
+        <p>
+
+          <a href="https://github.com/psswineford/Movie-API" target="_blank" class="grid__footer-right">
+            <button  type="button">Github</button>
+          </a>
+        </p>
+      </div>
+      <!-- Grid Item 3-->
+      <div class="grid__item">
+        <h2 class="grid__item__title">myFlix React Client</h2>
+        <img src="./img/projects/myflix-react.JPG" alt="logo" class="grid__item-image">
+        <p>
+          This is the React version of the client App that interfaces with the Movie API to display and edit the
+          information on the back end database.
+        </p>
+        <p>This app utilizes Javascript, React, Bootstrap</p>
+        <p>
+          <a href="https://psswinefords-myflixclient.netlify.app/" target="_blank" class="grid__footer-left">
+            <button  type="button">Website</button>
+          </a>
+
+          <a href="https://github.com/psswineford/myFlix-client" target="_blank" class="grid__footer-right">
+            <button  type="button">Github</button>
+          </a>
+        </p>
+      </div>
+      <!-- Grid Item 4-->
+      <div class="grid__item">
+        <h2 class="grid__item__title">Meet App</h2>
+        <img src="./img/projects/meetapp.JPG" alt="logo" class="grid__item-image">
+        <p>
+          This is a serverless web app that fetches and displays data on web developer events world wide utilizing the
+          Google API Calendar, serverless, and AWS. The front end client was built with React.
+        </p>
+        <p>This app utilizes Javascript, React, Serverless, AWS, OAuth, Recharts</p>
+        <p>
+          <a href="https://psswineford.github.io/meet-app/" target="_blank" class="grid__footer-left">
+            <button  type="button">Website</button>
+          </a>
+
+          <a href="https://github.com/psswineford/meet-app" target="_blank" class="grid__footer-right">
+            <button  type="button">Github</button>
+          </a>
+        </p>
+      </div>
+      <!-- Grid Item 5-->
+      <div class="grid__item">
+        <h2 class="grid__item__title">Chat App</h2>
+        <img src="./img/projects/Screen Shot 2022-02-03 at 11.01.16 AM.png" alt="logo" class="grid__item-image">
+        <p>
+          This is a react native communications app that allows users to chat in real time. They can also send pictures
+          from their mobile devices, real time photographs, and location data. The back end uses Google Firestore
+          database. Messages are stored and displayed when the users are offline.
+        </p>
+        <p>This app utilizes React Native, Expo, Firestore/Firebase, Gifted Chat</p>
+        <p>
+          <a href="https://psswineford.github.io/Pokedex-js-app/" target="_blank" class="grid__footer-left">
+            <button  type="button">Website</button>
+          </a>
+
+          <a href="https://github.com/psswineford/chat-app" target="_blank" class="grid__footer-right">
+            <button  type="button">Github</button>
+          </a>
+        </p>
+      </div>
+      <!-- Grid Item 6-->
+      <div class="grid__item">
+        <h2 class="grid__item__title">myFlix Angular Client</h2>
+        <img src="./img/projects/angular app.JPG" alt="logo" class="grid__item-image">
+        <p>
+          This is the Angular version of the client App that interfaces with the Movie API to display and edit the
+          information on the back end database.<br><br>
+        </p>
+        <p>This app utilizes HTML, Typescript, Angular, Angular Materials</p>
+        <p>
+          <a href="https://psswineford.github.io/myFlix-Angular-client/welcome" target="_blank"
+            class="grid__footer-left">
+            <button  type="button">Website</button>
+          </a>
+
+          <a href="https://github.com/psswineford/myFlix-Angular-client" target="_blank" class="grid__footer-right">
+            <button  type="button">Github</button>
+          </a>
+        </p>
+      </div>
     </div>
   </section>
 
